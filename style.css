@@ -1,0 +1,277 @@
+body
+{
+    background-color: #FAEBD7;
+    font-family: 'Lato', sans-serif;
+    margin: 0; !important;
+}
+
+#container
+{
+    width: 100%;
+
+}
+
+#boxes
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.box
+{
+    width:250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: 1s;
+}
+
+.box img
+{
+    background-position: 50% 50%;
+    min-height: 369px;
+}
+
+.box:hover
+{
+    transform:scale(1.3);
+    z-index: 2; /* uporządkowanie elementów na stosie */
+}
+
+.text-box
+{
+    color: #111111;
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+#logo
+{
+    text-align: center;
+    margin-top: 25px;
+}
+
+h1
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em
+  
+}
+
+#menu
+{
+    background-color: #303030;
+    margin-top: 50px;
+    color: #ffffff;
+    padding: 10px; /* dodatkowa przestrzeń w elemencie */
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    height: 40px;
+}
+
+ol /* lista numerowana */
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block; /* element liniowo-blokowy - rozpychamy sąsiadujące elementy we wszystkie strony */
+}
+
+ol a /* odniesienie do hiperłącza */
+{
+    color: #ffffff;
+    text-decoration: none; /* rodzaj dekoracji tekstu, np. podkreślenie, przekreślenie */
+    display: block;
+}
+
+ol > li /* rodzic > potomek */
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed;
+}
+
+ol > li:first-child /* syn-pierworodny, czyli pierwsze li w kodzie */
+{
+    border-left: 1px dashed;
+}
+
+ol > li > ul /* ul - lista nienumerowana */ /* li - element listy uporządkowanej (ol) lub element listy nieuporządkowej (ul) */
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color: #303030;
+    position: relative; /* pozycja elementu na stronie */
+    z-index: 100;
+}
+
+ol > li > ul > li:hover > a /* hover - nadawanie określonych atrybutów formatowania dla elementów na który najeżdzamy wskaźnikiem myszy */
+{
+    color: #696969;
+}
+
+#content
+{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    min-height: 300px;
+}
+
+#title
+{
+	padding: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	font-family: "Trirong", serif;
+}
+
+#aboutme-text
+{
+	padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 730px;
+	text-indent: 35px;
+
+}
+
+#contact-container
+{
+   width:500px;
+   margin-left: auto;
+   margin-right: auto;
+   padding:1em;
+
+}
+
+.form-group
+{
+	margin-bottom: 1.5em;
+}
+
+.form-label
+{
+	font-size: .75em;
+	display: block;
+	opacity: 1;
+}
+
+.form-control
+{
+	box-shadow: none;
+	border-radius: 0;
+	border-color: #ccc;
+	border-style: none none solid none;
+	width: 100%;
+	font-size: 1.25em;
+}
+
+.btn
+{
+	background: 0 0 #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	
+}
+
+#socialslogo
+{
+    display: flex;
+	justify-content: center;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#articles
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.articles-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+ 
+.articles-box
+{
+    width:350px;
+    border: 1px solid #ececec;
+    margin: 20px 20px;
+ 
+}
+.articles-img
+{
+    width:100%;
+    height: auto;
+}
+.articles-img img
+{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.articles-text
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.articles-text .articles-title
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.articles-text p
+{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+.articles-text a
+{
+    color: #0f0f0f;
+}
+.articles-text a:hover
+{
+    color: #c74242;
+    transition: all ease 0.3s;
+}
