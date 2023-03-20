@@ -11,13 +11,13 @@ body
 
 }
 
-#boxes
+#service-boxes
 {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
-.box
+.service-box
 {
     width:250px;
     margin-left: 50px;
@@ -25,19 +25,19 @@ body
     transition: 1s;
 }
 
-.box img
+.service-box img
 {
     background-position: 50% 50%;
     min-height: 369px;
 }
 
-.box:hover
+.service-box:hover
 {
     transform:scale(1.3);
     z-index: 2; /* uporządkowanie elementów na stosie */
 }
 
-.text-box
+.service-text-box
 {
     color: #111111;
     text-align: center;
